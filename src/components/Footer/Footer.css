@@ -1,0 +1,92 @@
+.footer {
+  background: var(--bg-dark-secondary);
+  padding: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Logo reuses same classes as Navbar */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  transition: transform var(--transition-fast);
+}
+
+.footer__logo:hover {
+  transform: scale(1.05);
+}
+
+.footer__logo .logo-m {
+  color: var(--primary);
+}
+
+.footer__logo .logo-divider {
+  color: var(--accent);
+  font-weight: 300;
+  opacity: 0.6;
+  margin: 0 1px;
+  transform: skewX(-5deg);
+  display: inline-block;
+}
+
+.footer__logo .logo-l {
+  color: var(--accent);
+}
+
+.footer__copyright {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.footer__socials a {
+  color: rgba(255, 255, 255, 0.35);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+.footer__socials a:hover {
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer__left {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

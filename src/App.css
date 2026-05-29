@@ -1,0 +1,11 @@
+/* App-level styles — minimal, most styling lives in component CSS */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app main {
+  flex: 1;
+}

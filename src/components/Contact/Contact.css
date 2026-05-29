@@ -1,0 +1,161 @@
+.contact {
+  padding: var(--section-padding);
+  background: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background pattern */
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(10, 110, 189, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(18, 184, 134, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ===== HEADER ===== */
+.contact__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.contact__underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+.contact__subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== GRID ===== */
+.contact__grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== CARD ===== */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  cursor: pointer;
+  transition: transform var(--transition-base), border-color var(--transition-base),
+    box-shadow var(--transition-base), background var(--transition-base);
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Network-specific hover colors */
+.contact-card[data-type='github']:hover {
+  border-color: #6e5494;
+  box-shadow: 0 8px 32px rgba(110, 84, 148, 0.2);
+}
+
+.contact-card[data-type='linkedin']:hover {
+  border-color: #0077B5;
+  box-shadow: 0 8px 32px rgba(0, 119, 181, 0.2);
+}
+
+.contact-card[data-type='whatsapp']:hover {
+  border-color: #25D366;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.2);
+}
+
+/* ===== ICON ===== */
+.contact-card__icon {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.contact-card:hover .contact-card__icon {
+  transform: scale(1.15);
+}
+
+.contact-card[data-type='github']:hover .contact-card__icon {
+  color: #a78bfa;
+}
+
+.contact-card[data-type='linkedin']:hover .contact-card__icon {
+  color: #0077B5;
+}
+
+.contact-card[data-type='whatsapp']:hover .contact-card__icon {
+  color: #25D366;
+}
+
+/* ===== TEXT ===== */
+.contact-card__label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.contact-card__sublabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 1.5rem;
+  }
+
+  .contact__title {
+    font-size: 2rem;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 2rem;
+  }
+}
