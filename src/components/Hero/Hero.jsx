@@ -24,13 +24,13 @@ export default function Hero() {
 
       <div className="hero__container">
         <div className="hero__content fade-in">
-          <span className="hero__tagline">Analista de Dados · Saúde</span>
+          <span className="hero__tagline">Analista de Dados</span>
           <h1 className="hero__title">
             Transformando <span className="hero__title--accent">dados</span> em decisão
           </h1>
           <p className="hero__description">
             Relatórios, dashboards, gráficos, estudo de caso e análise
-            para pesquisadores e profissionais da saúde.
+            para pesquisadores e profissionais.
           </p>
           <button className="hero__cta" onClick={handleCTA} id="cta-servicos">
             Conheça meus serviços

@@ -13,7 +13,7 @@ const services = [
     ),
     title: 'Análise de Dados',
     description:
-      'Transformo dados brutos em insights estratégicos para instituições de saúde. Análises estatísticas, identificação de padrões e suporte à tomada de decisão clínica e administrativa.',
+      'Transformo dados brutos em insights estratégicos. Análises estatísticas, identificação de padrões e suporte à tomada de decisão clínica e administrativa.',
   },
   {
     icon: (
@@ -37,7 +37,7 @@ const services = [
     ),
     title: 'Gráficos e Dashboards',
     description:
-      'Crio painéis interativos e visualizações claras que facilitam o monitoramento de indicadores de saúde, metas assistenciais e KPIs institucionais.',
+      'Crio painéis interativos e visualizações claras que facilitam o monitoramento de indicadores.',
   },
   {
     icon: (
@@ -50,7 +50,7 @@ const services = [
     ),
     title: 'Minicursos',
     description:
-      'Capacitação em Python, Pandas, Matplotlib, probabilidade e estatística aplicada. Cursos práticos voltados a profissionais da saúde que desejam dominar a análise de dados.',
+      'Capacitação em Python, Pandas, Matplotlib, probabilidade e estatística aplicada. Cursos práticos voltados a profissionais que desejam dominar a análise de dados.',
   },
   {
     icon: (
@@ -63,7 +63,7 @@ const services = [
     ),
     title: 'Consultoria e Treinamentos',
     description:
-      'Consultoria personalizada para equipes e gestores de saúde. Treinamentos práticos para implementar cultura data-driven em hospitais, clínicas e laboratórios.',
+      'Consultoria personalizada para equipes e gestores. Treinamentos práticos para implementar cultura data-driven.',
   },
   {
     icon: (
@@ -77,17 +77,7 @@ const services = [
     ),
     title: 'Extração de Dados',
     description:
-      'Extraio e consolido dados de múltiplas fontes — planilhas, sistemas de saúde, bases públicas e APIs — garantindo integridade e rastreabilidade da informação.',
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-      </svg>
-    ),
-    title: 'Acompanhamento e Monitoramento',
-    description:
-      'Monitoramento contínuo de indicadores e métricas de saúde. Acompanho seus dados ao longo do tempo para garantir que as decisões estejam gerando resultados.',
+      'Extraio e consolido dados de múltiplas fontes — planilhas, sistemas, bases públicas e APIs — garantindo integridade e rastreabilidade da informação.',
   },
 ];
 
@@ -100,7 +90,7 @@ export default function Services() {
         <h2 className="services__title">Serviços</h2>
         <div className="services__underline"></div>
         <p className="services__subtitle">
-          Soluções completas em análise de dados para o setor da saúde
+          Soluções completas em análise de dados
         </p>
       </div>
 
